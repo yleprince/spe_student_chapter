@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>SPE</title>
+    <link
+      rel="icon"
+      href="http://www.craft.ai/images/favicons/android-chrome-192x192.png"
+    />
+
+    <meta name="description" content="Presentation for the UTC" />
+    <meta name="author" content="Yrieix Leprince" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/craft.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-130602790-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-130602790-2");
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-background="figures/back.png">
+          <h2>How machine learning models can support experts decisions</h2>
+          <h5>Applications in archeology and predictive maintenance.</h5>
+          <img height="70" data-src="figures/spe_international.png" />
+          <p>
+            <small>Matthieu Boussard / Yrieix Leprince</small>
+          </p>
+        </section>
+
+        <section>
+          <section data-background="figures/back.png">
+            <h2>Context</h2>
+          </section>
+          <section data-background="figures/crude_oil_pump.jpg">
+            <h3>Connected industry</h3>
+          </section>
+          <section data-background="figures/back.png">
+            <h3>Artificial Intelligence</h3>
+            <img
+              width="510"
+              height="510"
+              data-src="figures/ai.jpeg"
+              alt="Artificial Intelligence"
+            />
+          </section>
+          <section data-background="figures/back.png">
+            <h3>Alpha⭐ - Black Box</h3>
+            <iframe
+              width="700"
+              height="394"
+              src="https://www.youtube.com/embed/DMXvkbAtHNY?start=360"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section data-background="figures/back.png">
+            <h2>eXplainable AI</h2>
+            s
+            <p>
+              <a href="https://beta.craft.ai/shared/H1TfFtzIN" target="_blank"
+                >craft ai explainable model</a
+              >
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section data-background="figures/back.png">
+            <h2>Use Case Schopper</h2>
+          </section>
+
+          <section>
+            <h3>Want to know more about this project?</h3>
+            <p>
+              Contact us at
+              <A HREF="mailto:contact@craft.ai">contact@craft.ai</A>
+            </p>
+          </section>
+        </section>
+        <section>
+          <section data-background="figures/back.png">
+            <h2>Use case predictive maintenance</h2>
+          </section>
+
+          <section data-background="figures/archives.jpg">
+            <img
+              data-src="figures/predictive_maintenance.png"
+              alt="predictive maintenance"
+            />
+          </section>
+
+          <section data-background="figures/pipeline_back.png">
+            <h3>Assistant: <br />from learning to automation</h3>
+            <img
+              data-src="figures/predictive_maintenance_pipeline.png"
+              alt=""
+            />
+          </section>
+
+          <section data-background="figures/alfred.jpg">
+            <img data-src="figures/four.png" alt="" />
+          </section>
+        </section>
+
+        <section data-background="figures/back.png">
+          <h4>SPE Student Chapter</h4>
+          <p>made with <i class="heart"></i> by</p>
+          <img src="figures/craft_ai_square_logo.gif" width="200" />
+        </section>
+        <section data-background="figures/back.png">
+          <h2>Contacts</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Matthieu Boussard</td>
+                <td>
+                  <A HREF="mailto:matthieu.boussard@craft.ai"
+                    >matthieu.boussard@craft.ai</A
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Yrieix Leprince</td>
+                <td>
+                  <A HREF="mailto:yrieix.leprince@craft.ai"
+                    >yrieix.leprince@craft.ai</A
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {
+            src: "lib/js/classList.js",
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: "plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          { src: "plugin/search/search.js", async: true },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      const options = {
+        chart: {
+          type: "bar"
+        },
+        series: [
+          {
+            name: "sales",
+            data: [
+              0.042,
+              0.04,
+              0.027,
+              0.011,
+              0.01,
+              0.009,
+              0.0035,
+              0.002,
+              0.0002,
+              0.0001
+            ]
+          }
+        ],
+        grid: {
+          show: false
+        },
+        xaxis: {
+          categories: [
+            "Artemisia",
+            "Amaranthaceae",
+            "Alnus",
+            "Abies",
+            "Asteraceae",
+            "Apiaceae",
+            "Acer",
+            "Ilex Aquifolium",
+            "Arbutus unedo",
+            "Acanthaceae"
+          ],
+          labels: {
+            style: {
+              colors: "#fff"
+            }
+          }
+        },
+        yaxis: {
+          show: false
+        },
+        fill: {
+          colors: ["#fff"]
+        },
+        dataLabels: {
+          style: {
+            colors: ["#d54267"]
+          }
+        }
+      };
+
+      const chart = new ApexCharts(document.querySelector("#chart"), options);
+
+      chart.render();
+    </script>
+  </body>
+</html>
